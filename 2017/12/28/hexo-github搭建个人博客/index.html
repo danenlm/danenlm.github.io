@@ -3,14 +3,18 @@
 <head>
   <meta charset="utf-8">
   
-  <title>帅哥已经工作，丑鬼还在安睡</title>
+  <title>hexo+github搭建个人博客 | 帅哥已经工作，丑鬼还在安睡</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta property="og:type" content="website">
-<meta property="og:title" content="帅哥已经工作，丑鬼还在安睡">
-<meta property="og:url" content="http://yoursite.com/index.html">
+  <meta name="description" content="hexo是目前最主流的静态博客框架，该框架基于node，因此编译效率非常高，同时借助github可以实现零成本搭建和维护  环境搭建安装node环境在node官网下载对应操作系统的node安装包，安装过程比较简单，一直下一步，直到安装完成，安装完毕后通过以下步骤检测  win+r打开命令窗口 输入cmd回车 在cmd窗口输入node -v  如果提示“node不是外部或内部命令”，则表示安装失败">
+<meta property="og:type" content="article">
+<meta property="og:title" content="hexo+github搭建个人博客">
+<meta property="og:url" content="http://yoursite.com/2017/12/28/hexo-github搭建个人博客/index.html">
 <meta property="og:site_name" content="帅哥已经工作，丑鬼还在安睡">
+<meta property="og:description" content="hexo是目前最主流的静态博客框架，该框架基于node，因此编译效率非常高，同时借助github可以实现零成本搭建和维护  环境搭建安装node环境在node官网下载对应操作系统的node安装包，安装过程比较简单，一直下一步，直到安装完成，安装完毕后通过以下步骤检测  win+r打开命令窗口 输入cmd回车 在cmd窗口输入node -v  如果提示“node不是外部或内部命令”，则表示安装失败">
+<meta property="og:updated_time" content="2017-12-28T08:07:01.681Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="帅哥已经工作，丑鬼还在安睡">
+<meta name="twitter:title" content="hexo+github搭建个人博客">
+<meta name="twitter:description" content="hexo是目前最主流的静态博客框架，该框架基于node，因此编译效率非常高，同时借助github可以实现零成本搭建和维护  环境搭建安装node环境在node官网下载对应操作系统的node安装包，安装过程比较简单，一直下一步，直到安装完成，安装完毕后通过以下步骤检测  win+r打开命令窗口 输入cmd回车 在cmd窗口输入node -v  如果提示“node不是外部或内部命令”，则表示安装失败">
   
     <link rel="alternative" href="/atom.xml" title="帅哥已经工作，丑鬼还在安睡" type="application/atom+xml">
   
@@ -24,9 +28,6 @@
   <link rel="stylesheet" href="/font-awesome/css/font-awesome.min.css">
   <link rel="apple-touch-icon" href="/apple-touch-icon.png">
   
-    
-    
-  
   
       <link rel="stylesheet" href="/fancybox/jquery.fancybox.css">
   
@@ -38,8 +39,8 @@
           rootUrl: '/',
           fancybox: true,
           animate: true,
-          isHome: true,
-          isPost: false,
+          isHome: false,
+          isPost: true,
           isArchive: false,
           isTag: false,
           isCategory: false,
@@ -203,9 +204,7 @@
         </header>                
     </div>
 </nav>
-      <div class="body-wrap">
-  
-    <article id="post-hexo-github搭建个人博客" class="article article-type-post" itemscope itemprop="blogPost">
+      <div class="body-wrap"><article id="post-hexo-github搭建个人博客" class="article article-type-post" itemscope itemprop="blogPost">
   
     <div class="article-meta">
       <a href="/2017/12/28/hexo-github搭建个人博客/" class="article-date">
@@ -221,12 +220,19 @@
       <header class="article-header">
         
   
-    <h1 itemprop="name">
-      <a class="article-title" href="/2017/12/28/hexo-github搭建个人博客/">hexo+github搭建个人博客</a>
+    <h1 class="article-title" itemprop="name">
+      hexo+github搭建个人博客
     </h1>
   
 
       </header>
+      
+      <div class="article-info article-info-post">
+        
+
+        
+        <div class="clearfix"></div>
+      </div>
       
     
     <div class="article-entry" itemprop="articleBody">
@@ -319,151 +325,190 @@
 
       
       
-    </div>
-    
-    <div class="article-info article-info-index">
+        <div class="page-reward">
+          <p><a href="javascript:void(0)" onclick="dashangToggle()" class="dashang">赏</a></p>
+          <div class="hide_box"></div>
+          <div class="shang_box">
+            <a class="shang_close" href="javascript:void(0)" onclick="dashangToggle()">×</a>
+            <div class="shang_tit">
+              <p>纯属好玩</p>
+            </div>
+            <div class="shang_payimg">
+              <img src="/img/alipayimg.jpg" alt="扫码支持" title="扫一扫" />
+            </div>
+              <div class="pay_explain">扫码打赏，你说多少就多少</div>
+            <div class="shang_payselect">
+              
+                <div class="pay_item checked" data-id="alipay">
+                  <span class="radiobox"></span>
+                  <span class="pay_logo"><img src="/img/alipayimg.jpg" alt="支付宝" /></span>
+                </div>
+              
+              
+                <div class="pay_item" data-id="wechat">
+                  <span class="radiobox"></span>
+                  <span class="pay_logo"><img src="/img/wechatimg.jpg" alt="微信" /></span>
+                </div>
+              
+            </div>
+            <div class="shang_info">
+              <p>打开<span id="shang_pay_txt">支付宝</span>扫一扫，即可进行扫码打赏哦</p>
+            </div>
+          </div>
+        </div>
+        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/zepto/1.2.0/zepto.min.js"></script>
+        <script type="text/javascript">
+          $(".pay_item").click(function(){
+            $(this).addClass('checked').siblings('.pay_item').removeClass('checked');
+            var dataid=$(this).attr('data-id');
+            $(".shang_payimg img").attr("src","/img/"+dataid+"img.jpg");
+            $("#shang_pay_txt").text(dataid=="alipay"?"支付宝":"微信");
+          });
+          function dashangToggle(){
+            
+            $(".hide_box").fadeToggle();
+            $(".shang_box").fadeToggle();
+          }
+        </script>
       
-      
-
-      
-      
-      <div class="clearfix"></div>
     </div>
     
   </div>
   
+    
+    <div class="copyright">
+        <p><span>本文标题:</span><a href="/2017/12/28/hexo-github搭建个人博客/">hexo+github搭建个人博客</a></p>
+        <p><span>文章作者:</span><a href="/" title="访问 walle 的个人博客">walle</a></p>
+        <p><span>发布时间:</span>2017年12月28日 - 14时37分</p>
+        <p><span>最后更新:</span>2017年12月28日 - 16时07分</p>
+        <p>
+            <span>原始链接:</span><a class="post-url" href="/2017/12/28/hexo-github搭建个人博客/" title="hexo+github搭建个人博客">http://yoursite.com/2017/12/28/hexo-github搭建个人博客/</a>
+            <span class="copy-path" data-clipboard-text="原文: http://yoursite.com/2017/12/28/hexo-github搭建个人博客/　　作者: walle" title="点击复制文章链接"><i class="fa fa-clipboard"></i></span>
+            <script src="/js/clipboard.min.js"></script>
+            <script> var clipboard = new Clipboard('.copy-path'); </script>
+        </p>
+        <p>
+            <span>许可协议:</span><i class="fa fa-creative-commons"></i> <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/3.0/cn/" title="中国大陆 (CC BY-NC-SA 3.0 CN)" target = "_blank">"署名-非商用-相同方式共享 3.0"</a> 转载请保留原文链接及作者。
+        </p>
+    </div>
+
+
+
+<nav id="article-nav">
+  
+  
+    <a href="/2017/12/27/写给老婆的信/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">写给老婆的信</div>
+      <strong class="article-nav-caption">></strong>
+    </a>
+  
+</nav>
+
+  
 </article>
 
+    <div id="toc" class="toc-article">
+    <strong class="toc-title">文章目录</strong>
+    <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#环境搭建"><span class="toc-number">1.</span> <span class="toc-text">环境搭建</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#安装node环境"><span class="toc-number">1.1.</span> <span class="toc-text">安装node环境</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#安装git"><span class="toc-number">1.2.</span> <span class="toc-text">安装git</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#安装vscode编译器"><span class="toc-number">1.3.</span> <span class="toc-text">安装vscode编译器</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#安装hexo脚手架"><span class="toc-number">2.</span> <span class="toc-text">安装hexo脚手架</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#创建博客项目"><span class="toc-number">3.</span> <span class="toc-text">创建博客项目</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#本地预览博客"><span class="toc-number">4.</span> <span class="toc-text">本地预览博客</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#启动hexo服务"><span class="toc-number">4.1.</span> <span class="toc-text">启动hexo服务</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#编译博客"><span class="toc-number">4.2.</span> <span class="toc-text">编译博客</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#清理缓存"><span class="toc-number">4.3.</span> <span class="toc-text">清理缓存</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#编写博客"><span class="toc-number">5.</span> <span class="toc-text">编写博客</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#替换主题"><span class="toc-number">6.</span> <span class="toc-text">替换主题</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#托管到gihub"><span class="toc-number">7.</span> <span class="toc-text">托管到gihub</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#个人域名绑定"><span class="toc-number">8.</span> <span class="toc-text">个人域名绑定</span></a></li></ol>
+</div>
+<input type="button" id="tocButton" value="隐藏目录"  title="点击按钮隐藏或者显示文章目录">
+
+<script src="https://7.url.cn/edu/jslib/comb/require-2.1.6,jquery-1.9.1.min.js"></script>
+<script>
+    var valueHide = "隐藏目录";
+    var valueShow = "显示目录";
+
+    if ($(".left-col").is(":hidden")) {
+        $("#tocButton").attr("value", valueShow);
+    }
+    $("#tocButton").click(function() {
+        if ($("#toc").is(":hidden")) {
+            $("#tocButton").attr("value", valueHide);
+            $("#toc").slideDown(320);
+        }
+        else {
+            $("#tocButton").attr("value", valueShow);
+            $("#toc").slideUp(350);
+        }
+    })
+    if ($(".toc").length < 1) {
+        $("#toc, #tocButton").hide();
+    }
+</script>
 
 
 
 
 
+<div class="bdsharebuttonbox">
+	<a href="#" class="fx fa-weibo bds_tsina" data-cmd="tsina" title="分享到新浪微博"></a>
+	<a href="#" class="fx fa-weixin bds_weixin" data-cmd="weixin" title="分享到微信"></a>
+	<a href="#" class="fx fa-qq bds_sqq" data-cmd="sqq" title="分享到QQ好友"></a>
+	<a href="#" class="fx fa-facebook-official bds_fbook" data-cmd="fbook" title="分享到Facebook"></a>
+	<a href="#" class="fx fa-twitter bds_twi" data-cmd="twi" title="分享到Twitter"></a>
+	<a href="#" class="fx fa-linkedin bds_linkedin" data-cmd="linkedin" title="分享到linkedin"></a>
+	<a href="#" class="fx fa-files-o bds_copy" data-cmd="copy" title="分享到复制网址"></a>
+</div>
+<script>window._bd_share_config={"common":{"bdSnsKey":{},"bdText":"","bdMini":"2","bdMiniList":false,"bdPic":"","bdStyle":"2","bdSize":"24"},"share":{}};with(document)0[(getElementsByTagName('head')[0]||body).appendChild(createElement('script')).src='/static/api/js/share.js?v=89860593.js?cdnversion='+~(-new Date()/36e5)];</script>
 
 
 
-  
-    <article id="post-写给老婆的信" class="article article-type-post" itemscope itemprop="blogPost">
-  
-    <div class="article-meta">
-      <a href="/2017/12/27/写给老婆的信/" class="article-date">
-      <time datetime="2017-12-27T07:42:19.000Z" itemprop="datePublished">2017-12-27</time>
-</a>
-    </div>
-  
-  <div class="article-inner">
+
     
-      <input type="hidden" class="isFancy" />
+        <div id="gitments"></div>
+<script src="/js/gitment.browser.js"></script>
+<script>
+    var gitment = new Gitment({
+      id: window.location.pathname,
+      owner: 'luuman',
+      repo: 'luuman.github.io',
+      oauth: {
+        client_id: '',
+        client_secret: '',
+      },
+    })
+    gitment.render('gitments')
+</script>
     
-    
-      <header class="article-header">
+
+
+
+    <div class="scroll" id="post-nav-button">
         
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2017/12/27/写给老婆的信/">写给老婆的信</a>
-    </h1>
-  
-
-      </header>
-      
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-          
-        <h2 id="写给老婆的信"><a href="#写给老婆的信" class="headerlink" title="写给老婆的信"></a>写给老婆的信</h2><p style="font-size:25px;">Dear My Love:</p><br><div align="center"><br> 上邪，<br><br>我欲与君相知，<br><br>长命无绝衰。<br><br>山无陵，<br><br>江水为竭。<br><br>冬雷震震，<br><br>夏雨雪。<br><br>天地合，<br><br>乃敢与君绝。<br></div><br><i><br> <p style="font-size:20px;color:red;"><br>这首诗肯定是在网上找的撒，但是情感的真挚诗毋庸置疑的哈。<br><br>这篇博客是写在我们结婚985天这一天，对你的爱我希望是天长地久<br><br>不知道能陪你走多久，但我尽量在我们都活着的时候<br><br>给你创造你想过的生活，所以我义无反顾的来学习新的东西<br><br>最近因为对未知的未来的恐惧，对你造成了一定的伤害，希望你能原谅我<br><br>我所有的一切都是想给你，给这个家庭一个美好<br><br>引用一篇徐志摩的情诗总给你<br><br><div align="center"><br>    我是天空里的一片云，<br><br>    偶尔投影在你的波心<br><br>    你不必讶异<br><br>    更无须欢喜<br><br>    在转瞬间消灭了踪影<br><br>    你我相逢在黑夜的海上<br><br>    你有你的，我有我的，方向<br><br>    你记得也好<br><br>    最好你忘掉<br><br>    在这交会时互放的光亮<br></div><br></p></i><br><p></p>
-
-<p>最后送上你的美照，希望你永远笑容灿烂，青春美丽（第一次写博客，low了点哈）</p>
-<div align="center"><img src="/img/son.jpg" alt=""></div>
-      
-      
-    </div>
-    
-    <div class="article-info article-info-index">
-      
-      
-
-      
-      
-      <div class="clearfix"></div>
-    </div>
-    
-  </div>
-  
-</article>
-
-
-
-
-
-
-
-
-
-  
-    <article id="post-hello-world" class="article article-type-post" itemscope itemprop="blogPost">
-  
-    <div class="article-meta">
-      <a href="/2017/12/26/hello-world/" class="article-date">
-      <time datetime="2017-12-26T04:27:13.022Z" itemprop="datePublished">2017-12-26</time>
-</a>
-    </div>
-  
-  <div class="article-inner">
-    
-      <input type="hidden" class="isFancy" />
-    
-    
-      <header class="article-header">
+            <a href="/" title="回到主页"><i class="fa fa-home"></i></a>
         
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2017/12/26/hello-world/">Hello World</a>
-    </h1>
-  
-
-      </header>
-      
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-          
-        <p>Welcome to <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="noopener">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="noopener">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="noopener">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="noopener">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="noopener">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="noopener">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/deployment.html" target="_blank" rel="noopener">Deployment</a></p>
-
-      
-      
+        <a title="文章列表"><i class="fa fa-bars"></i><i class="fa fa-times"></i></a>
+        
+            <a href="/2017/12/27/写给老婆的信/" title="下一篇: 写给老婆的信">
+                <i class="fa fa-angle-right"></i>
+            </a>
+        
     </div>
-    
-    <div class="article-info article-info-index">
-      
-      
+    <ul class="post-list"><li class="post-list-item"><a class="post-list-link" href="/2017/12/28/hexo-github搭建个人博客/">hexo+github搭建个人博客</a></li><li class="post-list-item"><a class="post-list-link" href="/2017/12/27/写给老婆的信/">写给老婆的信</a></li><li class="post-list-item"><a class="post-list-link" href="/2017/12/26/hello-world/">Hello World</a></li></ul>
+    <script src="https://7.url.cn/edu/jslib/comb/require-2.1.6,jquery-1.9.1.min.js"></script>
+    <script>
+        $(".post-list").addClass("toc-article");
+        $(".post-list-item a").attr("target","_blank");
+        $("#post-nav-button > a:nth-child(2)").click(function() {
+            $(".fa-bars, .fa-times").toggle();
+            $(".post-list").toggle(300);
+            if ($(".toc").length > 0) {
+                $("#toc, #tocButton").toggle(200, function() {
+                    if ($(".switch-area").is(":visible")) {
+                        $("#tocButton").attr("value", valueHide);
+                        }
+                    })
+            }
+            else {
+            }
+        })
+    </script>
 
-      
-      
-      <div class="clearfix"></div>
-    </div>
-    
-  </div>
-  
-</article>
 
 
-
-
-
-
-
-
-
-  
-  
+    <script>
+        
+    </script>
 </div>
       <footer id="footer">
     <div class="outer">
